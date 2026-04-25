@@ -6,7 +6,7 @@ Official repo for the LHACK Badge 2026
 ![docs/badge.png](docs/badge2.png)
 
 
-It consists of a ESP32-C3 and RGB-LEDS.
+It consists of an ESP32-C3 and RGB-LEDS.
 
 * ESP32-C3 [https://www.digikey.se/en/products/detail/espressif-systems/ESP32-C3FH4X/24366489](https://www.digikey.se/en/products/detail/espressif-systems/ESP32-C3FH4X/24366489)
 * RGB Leds (Pin 10): [https://www.lcsc.com/product-detail/C26167850.html](https://www.lcsc.com/product-detail/C26167850.html)
