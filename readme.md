@@ -13,3 +13,9 @@ It consists of a ESP32-C3 and RGB-LEDS.
 
 HW Design inspired from: [https://www.waveshare.com/wiki/ESP32-C3-Zero#Hardware_Description](https://www.waveshare.com/wiki/ESP32-C3-Zero#Hardware_Description)
 
+
+## Getting started with arduino 
+
+1. Install board: esp32 by Espressif Systems
+2. Select board: Waveshare EPS32-S3-Zero
+
