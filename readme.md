@@ -17,5 +17,6 @@ HW Design inspired from: [https://www.waveshare.com/wiki/ESP32-C3-Zero#Hardware_
 ## Getting started with arduino 
 
 1. Install board: esp32 by Espressif Systems
-2. Select board: Waveshare EPS32-S3-Zero
+2. Select board: Waveshare EPS32-C3-Zero
+3. Install Fast-LED library
 
