@@ -1,0 +1,73 @@
+Command: C:\Users\saitt\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe D:\downloads\esp-idf-v6.0.1\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace D:\downloads\esp-idf-v6.0.1\examples\get-started\blink\build\blink.elf D:\downloads\esp-idf-v6.0.1\examples\get-started\blink\build\bootloader\bootloader.elf --force-color -m 'C:\Users\saitt\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe' 'D:\downloads\esp-idf-v6.0.1\tools\idf.py'
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM3 instead...[0m
+[0;33m--- esp-idf-monitor 1.9.0 on \\.\COM3 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x403839d6: [0;33mrv_utils_wait_for_intr[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/riscv/include/riscv/rv_utils.h[0m[0m:[1;31m80[0m
+[0m--- (inlined by) [0;33mesp_cpu_wait_for_intr[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/esp_hw_support/cpu.c[0m[0m:[1;31m62[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40385274: [0;33mvPortExitCritical[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m624[0m
+[0m--- 0x40381c2e: [0;33mreconfigure_ticks[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/esp_system/int_wdt.c[0m[0m:[1;31m101[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x40385150: [0;33mesp_restart_noos[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40385274: [0;33mvPortExitCritical[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m624[0m
+[0m--- 0x40381c2e: [0;33mreconfigure_ticks[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/esp_system/int_wdt.c[0m[0m:[1;31m101[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x40385150: [0;33mesp_restart_noos[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x403838ae: [0;33mwdt_hal_write_protect_disable[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/esp_hal_wdt/wdt_hal_iram.c[0m[0m:[1;31m136[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40385274: [0;33mvPortExitCritical[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m624[0m
+[0m--- 0x40381c2e: [0;33mreconfigure_ticks[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/esp_system/int_wdt.c[0m[0m:[1;31m101[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x40385150: [0;33mesp_restart_noos[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0;33m--- Stack dump detected[0m
+[0m--- 0x40385272: [0;33mvPortExitCritical[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c[0m[0m:[1;31m622[0m
+[0m--- 0x40381c2e: [0;33mreconfigure_ticks[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/esp_system/int_wdt.c[0m[0m:[1;31m101[0m
+[0m--- 0x40380001: [0;33m_vector_table[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/riscv/vectors_intc.S[0m[0m:[1;31m54[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0m--- 0x40385150: [0;33mesp_restart_noos[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/esp_system/port/soc/esp32c3/system_internal.c[0m[0m:[1;31m115[0m
+[0m--- 0x403cbf10: [0;33mesp_bootloader_get_description[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/esp_bootloader_format/esp_bootloader_desc.c[0m[0m:[1;31m40[0m
+[0m--- 0x403ce710: [0;33mis_xmc_chip_strict[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/bootloader_support/bootloader_flash/src/bootloader_flash.c[0m[0m:[1;31m925[0m
+[0m--- 0x403cbf1a: [0;33mcall_start_cpu0[0m[0m at [0;32mD:/downloads/esp-idf-v6.0.1/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'The device does not recognize the command.', None, 22))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m[0m
+[0m

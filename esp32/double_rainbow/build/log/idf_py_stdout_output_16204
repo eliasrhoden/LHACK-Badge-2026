@@ -1,0 +1,9 @@
+Command: ninja all
+[0/1] Re-running CMake...
+-- Component directory D:/downloads/esp-idf-v6.0.1/components/mqtt does not contain a CMakeLists.txt file. No component will be added
+-- Minimal build - ON
+-- ccache will be used for faster recompilation
+-- Building ESP-IDF components for target esp32c3
+NOTICE: Processing 2 dependencies:
+NOTICE: [1/2] espressif/led_strip (3.0.3)
+NOTICE: [2/2] idf (6.0.1)

@@ -1,0 +1,13 @@
+Command: C:\Users\saitt\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe D:\downloads\esp-idf-v6.0.1\tools/idf_monitor.py -p COM4 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace D:\downloads\esp-idf-v6.0.1\examples\get-started\blink\build\blink.elf D:\downloads\esp-idf-v6.0.1\examples\get-started\blink\build\bootloader\bootloader.elf --force-color -m 'C:\Users\saitt\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe' 'D:\downloads\esp-idf-v6.0.1\tools\idf.py'
+ESP-ROM:esp32c3-eco7-20230720
+Build:Jul 20 2023
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x7 (DOWNLOAD(USB/UART0))
+Saved PC:0x40047ea4
+waiting for download
+[0;32mI (1274) example: Turning the LED ON![0m
+[0;32mI (2274) example: Turning the LED OFF![0m
+[0;32mI (3274) example: Turning the LED ON![0m
+[0;32mI (4274) example: Turning the LED OFF![0m
+[0;32mI (5274) example: Turning the LED ON![0m
+[0;32mI (6274) example: Turning the LED OFF![0m
+[0;32mI (7274) example: Turning the LED ON![0m

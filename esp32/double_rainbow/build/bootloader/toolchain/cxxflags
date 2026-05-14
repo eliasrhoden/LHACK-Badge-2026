@@ -1,0 +1,4 @@
+"-specs=D:/downloads/esp-idf-v6.0.1/examples/get-started/blink/build/bootloader/specs/picolibc.specs"
+-march=rv32imc_zicsr_zifencei
+-mtune=esp-base
+-fno-rtti
