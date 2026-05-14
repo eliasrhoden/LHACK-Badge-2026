@@ -1,0 +1,77 @@
+Command: cmake -G Ninja -B D:\downloads\esp-idf-v6.0.1\examples\get-started\blink\build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Users\saitt\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe -DESP_PLATFORM=1 -DIDF_TARGET=esp32c3 -DCCACHE_ENABLE=True D:\downloads\esp-idf-v6.0.1\examples\get-started\blink
+-- Existing sdkconfig 'D:/downloads/esp-idf-v6.0.1/examples/get-started/blink/sdkconfig' renamed to 'D:/downloads/esp-idf-v6.0.1/examples/get-started/blink/sdkconfig.old'.
+-- Found Git: C:/Program Files/Git/cmd/git.exe (found version "2.47.1.windows.1")
+-- Component directory D:/downloads/esp-idf-v6.0.1/components/mqtt does not contain a CMakeLists.txt file. No component will be added
+-- Minimal build - ON
+-- ccache will be used for faster recompilation
+-- The C compiler identification is GNU 15.2.0
+-- The CXX compiler identification is GNU 15.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: C:/Users/saitt/.espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/bin/riscv32-esp-elf-gcc.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/saitt/.espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/bin/riscv32-esp-elf-gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Users/saitt/.espressif/tools/riscv32-esp-elf/esp-15.2.0_20251204/riscv32-esp-elf/bin/riscv32-esp-elf-g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Building ESP-IDF components for target esp32c3
+NOTICE: Updating lock file at D:\downloads\esp-idf-v6.0.1\examples\get-started\blink\dependencies.lock
+NOTICE: Processing 2 dependencies:
+NOTICE: [1/2] espressif/led_strip (3.0.3)
+NOTICE: [2/2] idf (6.0.1)
+-- ESP-TEE is currently supported only on the esp32c6;esp32h2;esp32c5;esp32c61 SoCs
+-- KCONFIG_REPORT_VERBOSITY not set, using default
+-- Project sdkconfig file D:/downloads/esp-idf-v6.0.1/examples/get-started/blink/sdkconfig
+Loading defaults file D:/downloads/esp-idf-v6.0.1/examples/get-started/blink/sdkconfig.defaults...
+Loading defaults file D:/downloads/esp-idf-v6.0.1/examples/get-started/blink/sdkconfig.defaults.esp32c3...
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Adding linker script D:/downloads/esp-idf-v6.0.1/components/riscv/ld/rom.api.ld
+-- App "blink" version: v6.0.1-dirty
+-- Found Python3: C:/Users/saitt/.espressif/python_env/idf6.0_py3.13_env/Scripts/python.exe (found version "3.13.11") found components: Interpreter
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
+-- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
+-- Setting up mbedtls configuration
+-- Linkage type is PUBLIC
+-- Adding linker script D:/downloads/esp-idf-v6.0.1/components/esp_system/ld/esp32c3/memory.ld.in
+--   -> Preprocessing .in script: D:/downloads/esp-idf-v6.0.1/components/esp_system/ld/esp32c3/memory.ld.in
+-- Adding linker script D:/downloads/esp-idf-v6.0.1/components/esp_system/ld/esp32c3/sections.ld.in
+--   -> Preprocessing .in script: D:/downloads/esp-idf-v6.0.1/components/esp_system/ld/esp32c3/sections.ld.in
+--   -> Applying ldgen processing: D:/downloads/esp-idf-v6.0.1/examples/get-started/blink/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script D:/downloads/esp-idf-v6.0.1/components/esp_rom/esp32c3/ld/esp32c3.rom.ld
+-- Adding linker script D:/downloads/esp-idf-v6.0.1/components/esp_rom/esp32c3/ld/esp32c3.rom.api.ld
+-- Adding linker script D:/downloads/esp-idf-v6.0.1/components/esp_rom/esp32c3/ld/esp32c3.rom.bt_funcs.ld
+-- Adding linker script D:/downloads/esp-idf-v6.0.1/components/esp_rom/esp32c3/ld/esp32c3.rom.libgcc.ld
+-- Adding linker script D:/downloads/esp-idf-v6.0.1/components/esp_rom/esp32c3/ld/esp32c3.rom.version.ld
+-- Adding linker script D:/downloads/esp-idf-v6.0.1/components/esp_rom/esp32c3/ld/esp32c3.rom.ble_master.ld
+-- Adding linker script D:/downloads/esp-idf-v6.0.1/components/esp_rom/esp32c3/ld/esp32c3.rom.ble_50.ld
+-- Adding linker script D:/downloads/esp-idf-v6.0.1/components/esp_rom/esp32c3/ld/esp32c3.rom.ble_smp.ld
+-- Adding linker script D:/downloads/esp-idf-v6.0.1/components/esp_rom/esp32c3/ld/esp32c3.rom.ble_dtm.ld
+-- Adding linker script D:/downloads/esp-idf-v6.0.1/components/esp_rom/esp32c3/ld/esp32c3.rom.ble_test.ld
+-- Adding linker script D:/downloads/esp-idf-v6.0.1/components/esp_rom/esp32c3/ld/esp32c3.rom.ble_scan.ld
+-- Adding linker script D:/downloads/esp-idf-v6.0.1/components/esp_rom/esp32c3/ld/esp32c3.rom.eco3.ld
+-- Adding linker script D:/downloads/esp-idf-v6.0.1/components/esp_rom/esp32c3/ld/esp32c3.rom.eco3_bt_funcs.ld
+-- Adding linker script D:/downloads/esp-idf-v6.0.1/components/esp_rom/esp32c3/ld/esp32c3.rom.libc.ld
+-- Adding linker script D:/downloads/esp-idf-v6.0.1/components/soc/esp32c3/ld/esp32c3.peripherals.ld
+-- Components: app_update bootloader bootloader_support cxx efuse esp_app_format esp_blockdev esp_bootloader_format esp_common esp_driver_bitscrambler esp_driver_dma esp_driver_gpio esp_driver_rmt esp_driver_spi esp_hal_ana_conv esp_hal_clock esp_hal_dma esp_hal_gpio esp_hal_gpspi esp_hal_i2s esp_hal_mspi esp_hal_pmu esp_hal_rmt esp_hal_rtc_timer esp_hal_security esp_hal_timg esp_hal_touch_sens esp_hal_uart esp_hal_usb esp_hal_wdt esp_hw_support esp_libc esp_mm esp_partition esp_pm esp_psram esp_rom esp_security esp_stdio esp_system esp_timer esp_usb_cdc_rom_console espressif__led_strip esptool_py freertos hal heap log main mbedtls partition_table pthread riscv soc spi_flash
+-- Component paths: D:/downloads/esp-idf-v6.0.1/components/app_update D:/downloads/esp-idf-v6.0.1/components/bootloader D:/downloads/esp-idf-v6.0.1/components/bootloader_support D:/downloads/esp-idf-v6.0.1/components/cxx D:/downloads/esp-idf-v6.0.1/components/efuse D:/downloads/esp-idf-v6.0.1/components/esp_app_format D:/downloads/esp-idf-v6.0.1/components/esp_blockdev D:/downloads/esp-idf-v6.0.1/components/esp_bootloader_format D:/downloads/esp-idf-v6.0.1/components/esp_common D:/downloads/esp-idf-v6.0.1/components/esp_driver_bitscrambler D:/downloads/esp-idf-v6.0.1/components/esp_driver_dma D:/downloads/esp-idf-v6.0.1/components/esp_driver_gpio D:/downloads/esp-idf-v6.0.1/components/esp_driver_rmt D:/downloads/esp-idf-v6.0.1/components/esp_driver_spi D:/downloads/esp-idf-v6.0.1/components/esp_hal_ana_conv D:/downloads/esp-idf-v6.0.1/components/esp_hal_clock D:/downloads/esp-idf-v6.0.1/components/esp_hal_dma D:/downloads/esp-idf-v6.0.1/components/esp_hal_gpio D:/downloads/esp-idf-v6.0.1/components/esp_hal_gpspi D:/downloads/esp-idf-v6.0.1/components/esp_hal_i2s D:/downloads/esp-idf-v6.0.1/components/esp_hal_mspi D:/downloads/esp-idf-v6.0.1/components/esp_hal_pmu D:/downloads/esp-idf-v6.0.1/components/esp_hal_rmt D:/downloads/esp-idf-v6.0.1/components/esp_hal_rtc_timer D:/downloads/esp-idf-v6.0.1/components/esp_hal_security D:/downloads/esp-idf-v6.0.1/components/esp_hal_timg D:/downloads/esp-idf-v6.0.1/components/esp_hal_touch_sens D:/downloads/esp-idf-v6.0.1/components/esp_hal_uart D:/downloads/esp-idf-v6.0.1/components/esp_hal_usb D:/downloads/esp-idf-v6.0.1/components/esp_hal_wdt D:/downloads/esp-idf-v6.0.1/components/esp_hw_support D:/downloads/esp-idf-v6.0.1/components/esp_libc D:/downloads/esp-idf-v6.0.1/components/esp_mm D:/downloads/esp-idf-v6.0.1/components/esp_partition D:/downloads/esp-idf-v6.0.1/components/esp_pm D:/downloads/esp-idf-v6.0.1/components/esp_psram D:/downloads/esp-idf-v6.0.1/components/esp_rom D:/downloads/esp-idf-v6.0.1/components/esp_security D:/downloads/esp-idf-v6.0.1/components/esp_stdio D:/downloads/esp-idf-v6.0.1/components/esp_system D:/downloads/esp-idf-v6.0.1/components/esp_timer D:/downloads/esp-idf-v6.0.1/components/esp_usb_cdc_rom_console D:/downloads/esp-idf-v6.0.1/examples/get-started/blink/managed_components/espressif__led_strip D:/downloads/esp-idf-v6.0.1/components/esptool_py D:/downloads/esp-idf-v6.0.1/components/freertos D:/downloads/esp-idf-v6.0.1/components/hal D:/downloads/esp-idf-v6.0.1/components/heap D:/downloads/esp-idf-v6.0.1/components/log D:/downloads/esp-idf-v6.0.1/examples/get-started/blink/main D:/downloads/esp-idf-v6.0.1/components/mbedtls D:/downloads/esp-idf-v6.0.1/components/partition_table D:/downloads/esp-idf-v6.0.1/components/pthread D:/downloads/esp-idf-v6.0.1/components/riscv D:/downloads/esp-idf-v6.0.1/components/soc D:/downloads/esp-idf-v6.0.1/components/spi_flash
+-- Configuring done (13.5s)
+-- Generating done (0.6s)
+-- Build files have been written to: D:/downloads/esp-idf-v6.0.1/examples/get-started/blink/build

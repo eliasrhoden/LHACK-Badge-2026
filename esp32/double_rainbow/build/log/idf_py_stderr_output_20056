@@ -1,0 +1,9 @@
+Command: cmake -G Ninja -B D:\downloads\esp-idf-v6.0.1\examples\get-started\blink\build -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Users\saitt\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe -DESP_PLATFORM=1 -DIDF_TARGET=esp32c3 -DCCACHE_ENABLE=True D:\downloads\esp-idf-v6.0.1\examples\get-started\blink
+Configuration Report               
++---------------------------------+
+|  Parser Version: 1              |
+|  Verbosity: default             |
+|  Defaults policy: sdkconfig     |
+|  Status: Finished successfully  |
+|                                 |
++---------------------------------+

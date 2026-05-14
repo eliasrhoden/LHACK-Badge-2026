@@ -1,0 +1,361 @@
+Command: C:\Users\saitt\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe D:\downloads\esp-idf-v6.0.1\tools/idf_monitor.py -p COM3 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace D:\downloads\esp-idf-v6.0.1\examples\get-started\blink\build\blink.elf D:\downloads\esp-idf-v6.0.1\examples\get-started\blink\build\bootloader\bootloader.elf --force-color -m 'C:\Users\saitt\.espressif\python_env\idf6.0_py3.13_env\Scripts\python.exe' 'D:\downloads\esp-idf-v6.0.1\tools\idf.py'
+[0;32mI (104) esp_image: segment 3: paddr=00020020 vaddr=42000020 sizeESP-ROM:esp32c3-eco7-20230720[0m
+Build:Jul 20 2023
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403839d6
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5830,len:0x155c
+load:0x403cbf10,len:0xce0
+load:0x403ce710,len:0x2fbc
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v6.0.1-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May 14 2026 15:07:34[0m
+[0;32mI (25) boot: chip revision: v1.1[0m
+[0;32mI (25) boot: efuse block revision: v1.3[0m
+[0;32mI (29) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (32) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (40) boot: Enabling RNG early entropy source...[0m
+[0;32mI (44) boot: Partition Table:[0m
+[0;32mI (47) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (53) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (60) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (66) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (73) boot: End of partition table[0m
+[0;32mI (76) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0711ch ( 28956) map[0m
+[0;32mI (88) esp_image: segment 1: paddr=00017144 vaddr=3fc89c00 size=01854h (  6228) load[0m
+[0;32mI (92) esp_image: segment 2: paddr=000189a0 vaddr=40380000 size=07678h ( 30328) load[0m
+[0;32mI (104) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=10dbch ( 69052) map[0m
+[0;32mI (117) esp_image: segment 4: paddr=00030de4 vaddr=40387678 size=023f4h (  9204) load[0m
+[0;32mI (119) esp_image: segment 5: paddr=000331e0 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (124) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (126) boot: Disabling RNG early entropy source...[0m
+[0;32mI (142) cpu_start: Unicore app[0m
+[0;32mI (150) cpu_start: GPIO 20 and 21 are used as console UART I/O pins[0m
+[0;32mI (151) cpu_start: Pro cpu start user code[0m
+[0;32mI (151) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (153) app_init: Application information:[0m
+[0;32mI (156) app_init: Project name:     blink[0m
+[0;32mI (160) app_init: App version:      v6.0.1-dirty[0m
+[0;32mI (164) app_init: Compile time:     May 14 2026 15:31:28[0m
+[0;32mI (170) app_init: ELF file SHA256:  f748ed756...[0m
+[0;32mI (174) app_init: ESP-IDF:          v6.0.1-dirty[0m
+[0;32mI (178) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (182) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (186) efuse_init: Chip rev:         v1.1[0m
+[0;32mI (190) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (196) heap_init: At 3FC8C390 len 00033C70 (207 KiB): RAM[0m
+[0;32mI (201) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (207) heap_init: At 3FCDC710 len 0000294C (10 KiB): Retention RAM[0m
+[0;32mI (213) heap_init: At 50000024 len 00001FC4 (7 KiB): RTCRAM[0m
+[0;32mI (219) spi_flash: detected chip: generic[0m
+[0;32mI (222) spi_flash: flash io: dio[0m
+[0;33mW (225) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (238) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (244) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (251) main_task: Started on CPU0[0m
+[0;32mI (251) main_task: Calling app_main()[0m
+[0;32mI (251) example: Example configured to blink addressable LED![0m
+[1;31mE (1861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (2061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (3461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (3461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (3661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (3661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (3861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (4061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (4461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (4661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (5061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (5261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (5261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (5461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (5461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (5661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (5861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (6061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (6061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (6261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (6861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (7061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (7261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (7461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (7661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (7661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (7861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (8061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (8261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (8461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (8661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (8861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (8861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (9061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (9261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (9461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (9461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (9661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (9861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (10061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (10261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (10261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (10461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (10661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (10661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (10861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (11061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (11261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (11861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (12261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (12461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (12661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (12861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (12861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (13061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (13261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (13461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (13661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (13861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (14061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (14261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (14261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (14461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (14461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (14661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (14661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (14861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (14861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (15061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (15061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (15261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (15261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (15461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (15461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (15661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (15661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (15861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (15861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (16061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (16061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (16261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (16261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (16461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (16461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (16661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (16661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (16861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (16861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (17061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (17061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (17261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (17261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (17461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (17461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (17661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (17661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (17861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (17861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (18061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (18061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (18261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (18261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (18461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (18461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (18661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (18661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (18861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (18861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (19061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (19061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (19261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (19261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (19461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (19461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (19661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (19861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (19861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (20061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (20061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (20261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (20261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (20461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (20461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (20661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (20661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (20861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (20861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (21061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (21061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (21261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (21461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (21461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (21661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (21661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (21861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (21861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (22061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (22061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (22261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (22261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (22461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (22661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (22661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (22861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (23061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (23261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (23261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (23461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (23461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (23661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (23661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (23861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (23861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (24061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (24261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (24261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (24461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (24661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (24861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (24861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (25061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (25061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (25261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (25261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (25461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (25461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (25661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (25661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (25861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (25861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (26061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (26061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (26261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (26261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (26461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (26461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (26661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (26661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (26861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (26861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (27061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (27061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (27261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (27261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (27461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (27461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (27661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (27661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (27861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (27861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (28061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (28261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (28461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (28661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (28861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (29061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (29261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (29461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (30661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (30861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (31061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (31261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (31461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (31661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (31861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (32061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (32261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (32261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (32461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (32461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (32661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (32661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (32861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (32861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (33061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (33061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (33261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (33261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (33461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (33461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (33661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (33661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (33861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (33861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (34061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (34061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (34261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (34261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (34461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (34661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (34661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (34861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (34861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (35061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (35061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (35261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (35261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (35461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (35461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (35661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (35661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (35861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (35861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (36261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (36261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (36461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (36461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (36661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (36661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (36861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (36861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (37061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (37061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (37261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (37261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (37461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (37461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (37661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (37861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (37861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (38061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (38061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (38261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (38261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (38461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (38461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (38661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (38661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (38861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (38861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (39061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (39261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (39261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (39461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (39461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (39661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (39661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (39861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (39861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (40061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (40061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (40261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (40261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (40461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (40461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (40661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (40861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (40861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (41061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (41061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (41261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (41261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (41461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (41461) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (41661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (41661) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (41861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (41861) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (42061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (42061) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (42261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
+[1;31mE (42261) led_strip_rmt: led_strip_rmt_set_pixel(40): index out of maximum number of LEDs[0m
